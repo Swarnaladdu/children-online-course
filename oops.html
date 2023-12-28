@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <title>oops concept</title>
+    </head>
+    <body>
+        <script>
+            //oops;object oriented programming language
+            //methods
+            //class
+            //method
+            //inhertance
+            //polymorphism
+            //data obstruction
+            //encapsulation
+
+//constructor function:it creates the intance of variables known as objcets
+
+            // function myname(name,city,state,age){
+            //     this.a=name
+            //     this.b=city
+            //     this.c=state
+            //     this.d=age
+            //     this.myfunction=function(){
+            //         let x=`name:${this.a} \n city:${this.b} \n state:${this.c} \n age:${this.d} \n`
+            //         console.log(x)
+            //     }
+            // }
+            // let x=new myname("swarna","banglore","andra",22)
+            // x.myfunction()
+            // //in same parameter we have to pass one more argument
+
+            // let y=new myname("latha","mumbai","karnatajka",23)
+            // y.myfunction()
+
+//how to impliment construtor function in class
+    // class app{
+    //     constructor(name,city,state,age){
+    //         this.a=name
+    //         this.b=city
+    //         this.c=state
+    //         this.d=age
+    //         }
+    // myname=function(){
+    //     let x=`name:${this.a} \n city:${this.b} \n state:${this.c} \n age:${this.d} \n`
+    //     console.log(x)
+    //     }
+    // }
+
+    // let x=new app("swarna","banglore","andra",22)
+    //  x.myname()
+    // let y=new app("latha","mumbai","karnatajka",23)
+    // y.myfunction()
+
+
+//inhertance
+    // class helo{
+    //     constructor(){
+    //         console.log("parent class")
+    //     }
+    // }
+    // class helo1 extends helo{
+    //     constructor(){
+    //         super();
+    //         console.log("child class")
+    //     }
+    // }
+    // class app extends helo1{
+    //     constructor(name,city,state,age,a){
+    //         super(a);
+    //         this.a=name
+    //         this.b=city
+    //         this.c=state
+    //         this.d=age
+    //         }
+    // myname=function(){
+    //     let x=`name:${this.a} \n city:${this.b} \n state:${this.c} \n age:${this.d} \n`
+    //     console.log(x)
+    //     }
+    // }
+
+    // let x=new app("swarna","banglore","andra",22)
+    //  x.myname()
+    //  let y=new app("latha","mumbai","karnatajka",23)
+    //     y.myname()
+
+
+//prototypes
+       
+    //    function app(name){
+    //      this.a=name
+    //    }
+    //    app.prototype={
+    //   display:function(){
+    //     let x=`name:${this.a}`
+    //       console.log(x)
+    //   }
+    // }
+    // function app1(city){
+    //      this.b=city
+    //    }
+    //    app1.prototype={
+    //   display1:function(){
+    //     let x=`city:${this.b}`
+    //       console.log(x)
+    //   }
+    // }
+    // function app2(state){
+    //      this.c=state
+    //    }
+    //    app2.prototype={
+    //   display2:function(){
+    //     let x=`state:${this.c}`
+    //       console.log(x)
+    //   }
+    // }
+    // function app3(age){
+    //      this.d=age
+    //    }
+    //    app3.prototype={
+    //   display3:function(){
+    //     let x=`age:${this.d}`
+    //       console.log(x)
+    //   }
+    // }
+    // function result(name,city,state,age){
+    //     app.call(this,"swarna")
+    //     app1.call(this,"banglore")
+    //     app2.apply(this,["andra"])
+    //     let a=app3.bind(this)
+    //     a(25)
+    // }
+    // result.prototype=Object.create(app2.prototype)
+    // Object.assign(result.prototype,app.prototype)
+    // Object.assign(result.prototype,app1.prototype)
+    // Object.assign(result.prototype,app3.prototype)
+
+    // let x=new result()
+    // x.display()
+    // x.display1()
+    // x.display2()
+    // x.display3()
+
+
+
+//polymorphisum=same obj diffrent behaviour
+      class app{
+        constructor(id,book,author){
+            this.a=id
+            this.b=book
+            this.c=author
+        }
+        display=function(){
+            let x=`id:${this.a} \n book:${this.b} \n author:${this.c}`
+            console.log(x)
+        }
+      }
+
+      class app1{
+        constructor(id,book,author){
+            this.a=id
+            this.b=book
+            this.c=author
+        }
+        display=function(){
+            let x=`id:${this.a} \n book:${this.b} \n author:${this.c}`
+            console.log(x)
+        }
+      }
+
+      class app2{
+        constructor(id,book,author){
+            this.a=id
+            this.b=book
+            this.c=author
+        }
+        display=function(){
+            let x=`id:${this.a} \n book:${this.b} \n author:${this.c}`
+            console.log(x)
+        }
+      }
+      let obj=new app("01","html","swarna")
+      obj.display()
+      let obj1=new app1("02","css","latha")
+      obj1.display()
+      let obj2=new app2("03","java","reddy")
+      obj2.display()
+        </script>
+    </body>
+</html>
